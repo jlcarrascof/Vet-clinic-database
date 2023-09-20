@@ -34,15 +34,12 @@
 <!-- DESCRIPTION -->
 ## 📖 About the Project <a name="#about-project"></a>
 
-In the upcoming projects, you will use a relational database to create the data structure for a vet clinic. You will start with one table, and step by step, you will create a complete database with data about:
+This project will use a relational database to create the data structure for a vet clinic. I'll start with a single table and at the end, I'll create a complete database with data about:
 
     animals
     animals' owners
     clinic employees
     visits
-
-Apart from building data structure, you will be challenged with tasks that require SQL queries to answer specific questions.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +58,14 @@ Apart from building data structure, you will be challenged with tasks that requi
 
 ### ⭐️ Key Features <a name="key-features"></a>
 
-You will build your database in your local environment, and Microverse will not require you to share it. Therefore only you will have access to its data (which is a good thing from the security point of view). However, you will need to share all SQL queries you use to build and query your database to get feedback about them.
+    Create animals table.
+    Query and update animals table.
+    Query multiple tables.
+    Add "join table" for visits.
+    Database performance audit.
+    Add database schema diagram.    
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,6 +149,6 @@ If you like this project, please give a ⭐️ (Thank you)
 <!-- LICENSE -->
 ## 📝 License <a name="license"></a>
 
-This project is [MIT licensed](/LICENSE.md) .
+This project is [MIT licensed](./LICENSE.md) .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
