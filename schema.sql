@@ -49,3 +49,12 @@ CREATE TABLE specializations (
     FOREIGN KEY (species_id) REFERENCES species (id) ON DELETE CASCADE,
     PRIMARY KEY (vet_id,species_id)
 );
+
+CREATE TABLE visits (
+    vet_id INT,
+    animal_id INT,
+    visit_date DATE,
+    FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE,
+    FOREIGN KEY (animal_id) REFERENCES animals (id) ON DELETE CASCADE,
+    PRIMARY KEY (vet_id, visit_date)
+);
