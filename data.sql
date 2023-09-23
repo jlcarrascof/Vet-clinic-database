@@ -22,4 +22,8 @@ CREATE TABLE owners (
     full_name varchar(255),
     age integer
 );
-    
+
+CREATE TABLE species (
+    id serial PRIMARY KEY,
+    name varchar(255)
+);
