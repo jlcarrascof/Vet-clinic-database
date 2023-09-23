@@ -17,4 +17,9 @@ VALUES
     ('Blossom', '1998-10-13', 3, true, 17),
     ('Ditto', '2022-05-14', 4, true, 22);
 
+CREATE TABLE owners (
+    id serial PRIMARY KEY,
+    full_name varchar(255),
+    age integer
+);
     
