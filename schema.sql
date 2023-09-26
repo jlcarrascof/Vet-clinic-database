@@ -59,7 +59,14 @@ CREATE TABLE visits (
     PRIMARY KEY (vet_id, visit_date)
 );
 
-/* Querying  optimization */ 
-EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
-EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
-EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+/* Add an email column to owners table */
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+/* 
+    Optimized
+    - Created an INDEX for the animals ID help us to optimize A LOT the performance of the query.
+ */
+CREATE INDEX idx_animal_id ON visits (animal_id);
+CREATE INDEX idx_vets_id ON visits (vet_id);
+CREATE INDEX idx_email ON owners (email);
